@@ -1,0 +1,47 @@
+version: '2'
+services:
+  h1:
+    image: wtan/hadoop-docker-trunk:0.2
+    hostname: h1
+    command: sleep 10000
+    ports:
+     - 8020
+     - 8032
+     - 8030
+     - 8999:8088
+     - 8090
+     - 8031
+     - 8033
+  h2:
+    image: wtan/hadoop-docker-trunk:0.2
+    hostname: h2
+    command: sleep 10000
+    ports:
+     - 8032
+     - 8030
+     - 8088
+     - 8090
+     - 8031
+     - 8033
+  h3:
+    image: wtan/hadoop-docker-trunk:0.2
+    hostname: h3
+    command: sleep 10000
+    ports:
+     - 8032
+     - 8030
+     - 8088
+     - 8090
+     - 8031
+     - 8033
+  h4:
+    image: wtan/hadoop-docker-trunk:0.2
+    hostname: h4
+    command: sleep 10000
+    ports:
+     - 8032
+     - 8030
+     - 8088
+     - 8090
+     - 8031
+     - 8033

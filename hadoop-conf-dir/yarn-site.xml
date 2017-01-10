@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+<!-- Site specific YARN configuration properties -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>h1:8032</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>h1:8031</value>
+    </property>
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.7.1-src/hadoop-dist/target/hadoop-2.7.1/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.6.1/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.6.3/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.7.3-src-src/hadoop-dist/target/hadoop-2.7.3-src/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/root/hadoop-conf-dir,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/common/*,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/common/lib/*,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/hdfs/*,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/hdfs/lib/*,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/yarn/*,/root/hadoop-3.0.0-alpha2-SNAPSHOT/share/hadoop/yarn/lib/*</value>
+    </property>
+
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.6.5/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/common/*,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/common/lib/*,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/hdfs/*,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/hdfs/lib/*,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/yarn/*,/Users/wtan/Downloads/hadoop-2.7.3-src/hadoop-dist/target/hadoop-2.7.3/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+<!-- 2.2-maint -->
+<!--
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/Users/wtan/project/hadoop/hadoop-conf/,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/common/*,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/common/lib/*,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/hdfs/*,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/hdfs/lib/*,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/yarn/*,/Users/wtan/project/github/hadoop-common-trunk/hadoop-dist/target/hadoop-2.6.0-SNAPSHOT/share/hadoop/yarn/lib/*</value>
+    </property>
+-->
+
+    <property>
+        <name>yarn.resourcemanager.recovery.enabled</name>
+        <value>false</value>
+    </property>
+	
+    <property>
+        <name>yarn.timeline-service.enabled</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.system-metrics-publisher.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>yarn.timeline-service.generic-application-history.enabled</name>
+        <value>true</value>
+    </property>
+
+<property>
+  <name>yarn.scheduler.minimum-allocation-mb</name>
+  <value>100</value>
+</property>
+
+
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>4150</value>
+    </property>
+<!-- for preemption -->
+    <property>
+        <name>yarn.resourcemanager.scheduler.monitor.enable</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.scheduler.monitor.policies</name>
+        <value>org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.monitor.capacity.preemption.monitoring_interval</name>
+        <value>1000</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.monitor.capacity.preemption.max_wait_before_kill</name>
+        <value>5000</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.monitor.capacity.preemption.total_preemption_per_round</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.monitor.capacity.preemption.natural_termination_factor</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>1024</value>
+    </property>
+<!--
+    <property>
+        <name>yarn.node-labels.manager-class</name>
+        <value>org.apache.hadoop.yarn.server.resourcemanager.nodelabels.RMNodeLabelsManager</value>
+    </property>
+-->
+    <property>
+        <name>yarn.node-labels.fs-store.root-dir</name>
+        <value>/tmp/node-labels</value>
+    </property>
+
+    <property>
+        <name>yarn.node-labels.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+        <value>100</value>
+    </property>
+
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.log-container-debug-info</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.delete.debug-delay-sec</name>
+        <value>300</value>
+    </property>
+
+    <property>
+       <name>yarn.webapp.ui2.enable</name>
+        <value>false</value>
+    </property>
+
+
+    <property>
+       <name>yarn.timeline-service.http-cross-origin.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+       <name>yarn.resourcemanager.webapp.cross-origin.enabled</name>
+        <value>true</value>
+    </property>
+
+    <property>
+       <name>yarn.nodemanager.webapp.cross-origin.enabled</name>
+        <value>true</value>
+    </property>
+</configuration>

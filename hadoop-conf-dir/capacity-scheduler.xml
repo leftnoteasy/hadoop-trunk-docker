@@ -1,0 +1,231 @@
+<!--Sun Oct 26 18:45:19 2014-->
+    <configuration>
+    <property>
+      <name>yarn.scheduler.capacity.lazy-preemption-enabled</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.default.minimum-user-limit-percent</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+      <value>0.2</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.maximum-applications</name>
+      <value>10000</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.node-locality-delay</name>
+      <value>40</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.acl_administer_queue</name>
+      <value>*</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.acl_administer_jobs</name>
+      <value>*</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.acl_submit_applications</name>
+      <value>*</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.state</name>
+      <value>RUNNING</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.user-limit-factor</name>
+      <value>1</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.disable_preemption</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.accessible-node-labels</name>
+      <value>x</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.a.accessible-node-labels</name>
+      <value>x</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.accessible-node-labels.x.capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.a.accessible-node-labels.x.capacity</name>
+      <value>100</value>
+    </property>
+<!--
+    <property>
+      <name>yarn.scheduler.capacity.root.queues</name>
+      <value>default</value>
+    </property>
+
+-->
+<!--
+    <property>
+      <name>yarn.scheduler.capacity.root.queues</name>
+      <value>default</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.default.accessible-node-labels</name>
+      <value>*</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.accessible-node-labels.storm1_supervisor.capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.accessible-node-labels.storm1_ui_server.capacity</name>
+      <value>100</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.capacity.root.default.accessible-node-labels.storm1_appmaster.capacity</name>
+      <value>100</value>
+    </property>
+-->
+
+    <property>
+       <name>yarn.scheduler.capacity.root.queues</name>
+       <value>a,b</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.capacity</name>
+      <value>100</value>
+    </property>
+
+<!--
+    <property>
+      <name>yarn.scheduler.capacity.root.accessible-node-labels</name>
+      <value>x,y</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.accessible-node-labels.x.capacity</name>
+      <value>100</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.accessible-node-labels.y.capacity</name>
+      <value>100</value>
+    </property>
+-->
+    <property>
+      <name>yarn.scheduler.capacity.root.a.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.a.priority</name>
+      <value>1</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.a.user-limit-factor</name>
+      <value>10</value>
+    </property>
+<!--
+    <property>
+      <name>yarn.scheduler.capacity.root.a.accessible-node-labels</name>
+      <value>x,y</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.a.accessible-node-labels.x.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.a.accessible-node-labels.y.capacity</name>
+      <value>50</value>
+    </property>
+-->
+    <property>
+      <name>yarn.scheduler.capacity.root.b.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.ordering-policy</name>
+      <value>priority-utilization</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.ordering-policy.priority-utilization.preemption.enabled</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.user-limit-factor</name>
+      <value>10</value>
+    </property>
+<!--
+    <property>
+      <name>yarn.scheduler.capacity.root.b.accessible-node-labels</name>
+      <value>x,y</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.accessible-node-labels.x.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.accessible-node-labels.y.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.queues</name>
+      <value>b1,b2</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b1.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b1.accessible-node-labels</name>
+      <value>x</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b1.accessible-node-labels.x.capacity</name>
+      <value>100</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b2.capacity</name>
+      <value>50</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b2.accessible-node-labels</name>
+      <value>y</value>
+    </property>
+    <property>
+      <name>yarn.scheduler.capacity.root.b.b2.accessible-node-labels.y.capacity</name>
+      <value>100</value>
+    </property>
+-->
+  </configuration>

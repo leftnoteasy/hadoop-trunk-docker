@@ -1,0 +1,21 @@
+<configuration>
+	<property>
+		<name>yarn.node-label.labels</name>
+		<value>x,y,z</value>
+	</property>
+
+	<property>
+		<name>yarn.node-label.nodes</name>
+		<value>localhost</value>
+	</property>
+
+	<property>
+		<name>yarn.node-label.nodes.localhost.labels</name>
+		<value>x,y,z</value>
+	</property>
+
+	<property>
+		<name>yarn.node-label.load-strategy</name>
+		<value>clear</value>
+	</property>
+</configuration>
